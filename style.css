@@ -403,85 +403,43 @@
 
 /* WHATSAPP  e LINKEDIN*/
 
-.whatsapp-float{
-
-  position:fixed;
-
-  bottom:30px;
-  right:30px;
-
-  width:65px;
-  height:65px;
-
-  background:#25D366;
-
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  text-decoration:none;
-
-  z-index:999999;
-
-  box-shadow:0 8px 25px rgba(0,0,0,.25);
-
-  transition:.3s;
-
+/* Estilo base para todos os botões flutuantes */
+.whatsapp-float,
+.linkedin-float,
+.instagram-float {
+  position: fixed;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.whatsapp-float:hover{
-  transform:scale(1.1);
+.whatsapp-float:hover,
+.linkedin-float:hover,
+.instagram-float:hover {
+  transform: scale(1.1);
 }
 
-.whatsapp-float i{
-
-  color:white;
-
-  font-size:34px;
-
-}
-.linkedin-float{
-
-  position:fixed;
-
-  bottom:100px; /* acima do WhatsApp */
-  right:30px;
-
-  width:65px;
-  height:65px;
-
-  background:#0077B5;
-
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  text-decoration:none;
-
-  z-index:9999;
-
-  box-shadow:0 8px 25px rgba(0,0,0,.25);
-
-  transition:.3s;
-
+/* Posições individuais e cores */
+.whatsapp-float {
+  bottom: 20px;
+  background-color: #25d366;
 }
 
-.linkedin-float:hover{
-
-  transform:scale(1.1);
-
+.linkedin-float {
+  bottom: 80px;
+  background-color: #0077b5;
 }
 
-.linkedin-float i{
-
-  color:white;
-  font-size:30px;
-
-}
-.texto-verde{
-  color: #013b1f;
+.instagram-float {
+  bottom: 140px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aebe6 90%);
 }
