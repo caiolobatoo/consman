@@ -25,6 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
       const headerOffset = 80; // Altura do cabeçalho
       const elementPosition = target.getBoundingClientRect().top;
+      const headerOffset = 80;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
       window.scrollTo({
